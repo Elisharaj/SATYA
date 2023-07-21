@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY DEAR WELCOME TO THIS WEBSITE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #message {
+            font-size: 24px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>press any key 1 to 9</h1>
+    <button onclick="sayHii()">1</button>
+    <button onclick="sayHello()">2</button>
+  <button onclick="sayH()">3</button>
+ 
+  <button onclick="sayHl()">4</button>
+   <button onclick="sayM()">5</button>
+   <button onclick="sayN()">6</button>
+   <button onclick="sayO()">7</button>
+   <button onclick="sayP()">8</button>
+   <button onclick="sayHel()">9</button>
+ 
+    <div id="message"></div>
+
+    <script>
+        function sayHii() {
+            displayMessage("hii");
+        }
+
+        function sayHello() {
+            displayMessage("hello");
+        }
+
+function sayH() {
+            displayMessage("how are you");
+        }function sayHl() {
+            displayMessage("i am single");
+        }function sayM() {
+            displayMessage("ARE YOU SINGLE");
+        }function sayN() {
+            displayMessage("IF YOU ARE SINGLR I WANT TO PRESS NEXT NUMBER");
+        }function sayO() {
+            displayMessage("I WANT TO DATE WITH YOU");
+        }function sayP() {
+            displayMessage("ARE YOU INTRESTED");
+        }function sayHel() {
+            displayMessage("SAREA BYE MARI GOOD NIGHT");
+        }
+
+
+
+        function displayMessage(message) {
+            const messageDiv = document.getElementById("message");
+            messageDiv.textContent = message;
+        }
+    </script>
+</body>
+</html>
